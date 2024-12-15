@@ -49,8 +49,8 @@
             $('#statue').html("");
             $('#favicon').attr('src', "pack.png");
 
-            let server_url = document.server.server_url.value;
-            let server_port = document.server.server_port.value;
+            let server_url = "mc.ptobuon.eu.org";
+            let server_port = 36697;
             let server_url_full = `https://api.minetools.eu/ping/${server_url}/${server_port}`;
 
             $.getJSON(server_url_full, function(api) {
