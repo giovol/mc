@@ -24,7 +24,7 @@
 
             let server_url = "mc.ptobuon.eu.org";
             let server_port = 36697;
-            let server_url_full = `https://api.minetools.eu/ping/${server_url}/${server_port}`;
+            let server_url_full = `https://api.minetools.eu/ping/${server_url}/`;
 
             $.getJSON(server_url_full, function(api) {
                 if (api.error) {
